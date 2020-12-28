@@ -1,0 +1,149 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.dashboard{
+    width: 650px;
+    /* background-color: blue; */
+    display: flex;
+    margin: auto;
+}
+
+.board{
+    width: 321px;
+    height: 321px;
+    background-color: gray;
+
+    /* margin: auto; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.square{
+    background-color: beige;
+    width: 100px;
+    height: 100px;
+    border: 1px solid yellow;
+    /* display: inline-block; */
+}
+
+.O{
+    margin: auto;
+}
+
+.O:after{
+    content: "\1F535";
+    line-height: 100px;
+    font-size: 45px;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.X{
+    margin: auto;
+}
+
+.X:after{
+    content: "\274C";
+    line-height: 100px;
+    font-size: 50px;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.info-panel{
+    width: 321px;
+    background-color: rgb(192, 241, 192);
+    margin-left: auto;
+    text-align: center;
+}
+
+.score{
+    margin: auto;
+    width: 315px;
+    height: 100px;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h5, p{
+    margin-left: 5px;
+}
+
+.scoreO{
+    margin-right: 5px;
+}
+
+.scoreX, .scoreO{
+    font-family: "Press Start 2P";
+    font-size: 30px;
+    color: blanchedalmond;
+
+    width: 115px;
+    height: 55px;
+    background-color: rgb(41, 34, 34);
+
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scoreX:after{
+    content: "\274C";
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.scoreO:after{
+    content: "\1F535";
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.message-panel{
+    margin: 5px auto;
+    width: 315px;
+    height: 100px;
+    border: 2px solid gray;
+    text-align: left;
+}
+
+#info-message{
+    font-size: 0.83em;
+    font-style: italic;
+}
+
+button{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(224, 224, 149);
+    font-weight: bold;
+    margin-top: 15px;
+    transition-delay: 100ms;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:rgb(204, 204, 124);
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+    <h1>Jogo da Velha</h1>
+
+    <div class="dashboard">
+        
+        <div class="board">
+    
+            <div id="0" class="square"></div>
+            <div id="1" class="square"></div>
+            <div id="2" class="square"></div>
+            <div id="3" class="square"></div>
+            <div id="4" class="square"></div>
+            <div id="5" class="square"></div>
+            <div id="6" class="square"></div>
+            <div id="7" class="square"></div>
+            <div id="8" class="square"></div>
+    
+        </div>
+
+        <div class="info-panel">
+            <div class="score">
+                <h5>Placar</h5>
+
+                <div class="scoreX">
+                    <span id="updateX">0</span>
+                </div>
+
+                <div class="scoreO">
+                    <span id="update0">0</span>
+                </div>
+
+            </div>
+
+
+            <div class="message-panel">
+                <h5>Mensagens</h5>
+                <div id="info-message">
+                    <p>Jogo iniciado...</p>
+                </div>
+
+            </div>
+
+            <button onclick="newGame()">Novo Jogo</button>
+        </div>
+    </div>
+
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/interface.js"></script>
+    
+</body>
+</html>
