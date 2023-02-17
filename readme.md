@@ -13,5 +13,5 @@
   - Manipulação do DOM e Funções Javascript
   - Operador Condicional Ternário
   
-  ### Jogue utilizando o link abaixo:
+  ### :video_game: Jogue utilizando o link abaixo:
   https://fa-biano.github.io/Jogo-da-Velha/
